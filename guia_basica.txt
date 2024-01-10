@@ -1,0 +1,96 @@
+#aqui iran los comandos mas importantes de git 
+git config --global user.name 'name'
+git config --global user.email email@gmail.comandos
+#en le archivo congig que debe estar en el home estaran guardandose todos los datos globales
+
+git config --list (con este veras todos los datos registrados incluyendo alias )
+
+
+
+git init 
+git add 
+git commit -am ''
+
+gut status
+
+git diff (compara versiones)
+git diff id id (compara versiones en especifico)
+
+git log 
+git log --graph --oneline --all --decorate
+git show
+
+git reset id (vuelve al stado elejido)
+git reset --soft (lo que este en stagin se queda en staging)
+git reset --hard (borra todo)
+
+git checkout id (te deja ver el estado del id, y tambien de los archivos elejidos)
+
+git branch name (crea una rama)
+git checkout name(branch)
+
+git merge name(branch) ('une las ramas')
+
+-------------------------------------------------------------------------------------------
+ssh-keygen -t rsa -b 4096 -C 'email'
+(la ubicacion de las llaves estan en un carpeta oculta llamada ssh)
+
+#revisa que el servidor de llaves este encendido
+eval $(ssh-agent -s)
+output > agent id 4188
+
+debes pegar la llave publica en la configuracion de llaves ssh en github
+
+----------------------------------------------------------------------------------------------
+
+git remote add origin (direccion del repositorio remoto)
+
+git remote -v
+
+git pull origin main (trae la informacion)
+git push origin main (empuja la infomacion al remoto desde el main)
+
+git pull origin main --allow-unrelated-histories
+
+----------------------------------------------------------------------------------------------
+
+visualizacion de ramas 
+
+git log --all --graph --decorate --oneline
+
+---------------------------------------------------------------------------------------------
+
+git tag -a v0.1(nombre de la version) -m 'nota o msj' id (puede ser el del arbol)
+git tag (mostrara todos los tag)
+
+enviar tag a remoto:
+git pull
+git push origin --tags
+
+borrar tag :
+git tag -d 'nombre'
+git pull 
+git push origin --tags
+
+para borrar de git:
+git push origin :refs/tags/name
+
+------------------------------------------------------------------------------------------------
+enviar ramas:
+git pull origin main
+git checkout branch
+git pull origin branch
+
+------------------------------------------------------------------------------------------------
+clonar repositorios
+
+sin hacer git init
+
+git clone url 
+
+cuando trabajes en equipo te daran una rama por lo que debes hacer es siempre 
+
+git pull origin branch
+
+--------------------------------------------------------------------------------------------------
+
