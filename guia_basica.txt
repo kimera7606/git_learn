@@ -18,6 +18,10 @@ git diff id id (compara versiones en especifico)
 
 git log 
 git log --graph --oneline --all --decorate
+git log --author name (busca por autor)
+git log --committer name (busca por aprobador)
+git log --pretty=oneline (todo en una linea bien especifico solo le coomit con su id)
+
 git show
 
 git reset id (vuelve al stado elejido)
@@ -56,7 +60,7 @@ git pull origin main --allow-unrelated-histories
 
 visualizacion de ramas 
 
-git log --all --graph --decorate --oneline
+git log --all --graph --decorate --oneline (puedes hacer un alias de esto)
 
 ---------------------------------------------------------------------------------------------
 
@@ -91,6 +95,6 @@ git clone url
 cuando trabajes en equipo te daran una rama por lo que debes hacer es siempre 
 
 git pull origin branch
-
+(en este sentido empujamos una rama al repositorio remoto)
 --------------------------------------------------------------------------------------------------
 
