@@ -47,4 +47,14 @@ build/
 doc/*.txt
 # ignora todos los archivos .txt del directorio doc/
 doc/**/*.txt
+-----------------------------------------------------------------------------------------------------------------------------
+#ver cambios preparados y no preparados
+#no preparados
+git diff #mostrara los cambios no preparados, es decir estan modificados pero aun no han sido agregados o no se encuentran en staging 
+        #la diferencia entre la modificada sin preparar  y el ultimo commit
+#preparados
+git diff --staged #muestra los las diferencias entre los preparados y el ultimo commit 
+
+
+
 
