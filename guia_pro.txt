@@ -1,0 +1,50 @@
+#aqui veremos los codigos segun la guia profesional de GIT 
+------------------------------------------------------------------
+#instalacion de GIT:
+sudo apt-get install git 
+-----------------------------------------------------------------
+#configuraciones de git personal 
+git config --global user.name 'angel'
+git config --global user.email 'angel@gmail.com'
+
+#comprobar configuracion:
+git config --list
+
+#tambien puedes comprobar cada dato por ejemplo:
+git config user.name (te dara como resultado el nombre del usuario ese sera tu input)
+-----------------------------------------------------------------------------------------
+#fundamentos
+git init 
+git add <file> #añade un archivo al staginfg o preparacion para luego ser confirmado
+git add . #sirve para añadir automaticamente todos los archivos que esten en el repositorio
+
+git commit -m 'messaje' #confirma el directorio para guardarlo
+git commit -am 'añade y deja mensaje de confirmacion' 
+--------------------------------------------------------------------------------------------
+#remoto
+git clone <url> #trae un repositorio con toda la informacion del mismo incluyendo sus ramas y el historial
+git clone <url> <name> #tambien puedes renombrar o colocarle un nombre distinto al repositorio que te estas trayendo del remoto
+------------------------------------------------------------------------------------------------------------------------------------
+#revisando los estados de tus documentos repositorios y demas archivos contenido en el directorio local de git
+git status
+------------------------------------------------------------------------------------------------------------------------------------
+#crear archivo gitignore para que ignore todos aquellos archivos de los cuales no quieres llevar ningun seguimiento
+#se crea un archivo llamado .gitignore este archivo contendra todas aquellas excepciones de las cuales no quieres que git haga seguimiento
+#existe una pagina 
+https://github.com/github/gitignore
+la cual tiene los ignore generales de cualquier proyecto
+ejemplos: 
+# ignora los archivos terminados en .a
+*.a
+# pero no lib.a, aun cuando había ignorado los archivos terminados en .a en la línea
+anterior
+!lib.a
+# ignora unicamente el archivo TODO de la raiz, no subdir/TODO
+/TODO
+# ignora todos los archivos del directorio build/
+build/
+# ignora doc/notes.txt, pero no este: doc/server/arch.txt
+doc/*.txt
+# ignora todos los archivos .txt del directorio doc/
+doc/**/*.txt
+
