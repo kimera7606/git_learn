@@ -62,6 +62,18 @@ git rm <file> #lo elimina pero luego debes guardar el cambio con un commit
 git mv <file>
 #luego se debe realizar un commit normal para que quede en el historial de log
 -----------------------------------------------------------------------------------------------
+#ver historial de confirmaciones
+para ver el historial de confirmaciones deberiamos usar git log el cual nos trae de manera descendiente los diferentes commit del repositorio
+git log 
+
+git log -p #muestra las diferencias introducidas en cada commit como un diff entre cada commit detallado
+git log -(n) #donde n es cualquier entero que quiere limitar las ultimos commit en numeros o veces 
+#puedes combinar ambos usando
+git log -p -2 
+git log --stat #muestra las stadisticas de cada confirmacion o commit 
+
+git log --pretty=oneline #muestra las confirmaciones en una sola linea mas directa y corta commit con su respectivo id 
+
 
 
 
