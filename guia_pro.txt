@@ -54,7 +54,14 @@ git diff #mostrara los cambios no preparados, es decir estan modificados pero au
         #la diferencia entre la modificada sin preparar  y el ultimo commit
 #preparados
 git diff --staged #muestra los las diferencias entre los preparados y el ultimo commit 
-
+------------------------------------------------------------------------------------------------------------------------------------
+eliminar archivos
+git rm <file> #lo elimina pero luego debes guardar el cambio con un commit 
+----------------------------------------------------------------------------------
+#renombrar archivos
+git mv <file>
+#luego se debe realizar un commit normal para que quede en el historial de log
+-----------------------------------------------------------------------------------------------
 
 
 
