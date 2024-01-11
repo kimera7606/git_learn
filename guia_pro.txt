@@ -74,6 +74,13 @@ git log --stat #muestra las stadisticas de cada confirmacion o commit
 
 git log --pretty=oneline #muestra las confirmaciones en una sola linea mas directa y corta commit con su respectivo id 
 
+#otras opciones que que podemos realizar seguimiento
+git log --committer <name> # muestra los commit cuyo confirmador coincide con la cadena especificada
+git log --author <name>
+git log (n) donde n sera el numero de confirmaciones 
+-----------------------------------------------------------------------------------------------------------------------------
+#deshacer cosas:
+git commit -amend -m #pega la preparacion actual con el commit pasado incluso puedes dejar directo el cambio del commit anterior es decir el msj
 
 
 
