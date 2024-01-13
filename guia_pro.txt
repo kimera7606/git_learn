@@ -89,5 +89,9 @@ git reset head <file>
 git congif --global alias.[name-alias] 'comandos sin git' 
 
 # al momento de usar alias de coloca git [alias] 
+----------------------------------------------------------------------------------------------------------------------------------
+#interfaz grafica 
+
+gitk 
 
 
