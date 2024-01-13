@@ -1,0 +1,44 @@
+#confirmar remoto:
+git remote
+git remote -v 
+
+#añadir remoto
+git clone <url> 
+git clone <url> name #en este caso renombramos el clon que estamos trayendo del repositorio remoto
+
+git pull origin main #trae datos actualizados
+git push origin main #lleva tus cambios a la rama remota y los une con ella 
+
+#ver informacion acerca de un remoto particular
+git remote show 'remote name'
+
+-------------------------------------------------------------------------
+#eliminar y renombrar remoto
+git remote rename [nombre-actual] [nombre-nuevo]
+
+git remote rm [nombre-delete]
+
+------------------------------------------------------
+#etiquetas 
+
+#listar etiquetas 
+
+git tag
+git tag -l 'nombre de tag'
+
+#crear etiqueta 
+git tag -a [name-tag] -m 'msj tag'
+
+git show v.1.3 #mostrara la etiqueta con su commit e informacion adicional referente 
+
+#etiquetado tardio 
+
+git tag -a [versio tag] [id -commit]
+
+------------------------------------------------------------------------------
+#enviar tag al remoto 
+
+git push origin [tag] envia todas las etiquetas por defecto
+git push origin --tags #envia todas las etiquetas  
+
+
