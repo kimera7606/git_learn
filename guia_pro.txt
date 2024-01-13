@@ -85,5 +85,9 @@ git commit -amend -m #pega la preparacion actual con el commit pasado incluso pu
 #deshacer cambios preparados
 git reset head <file>
 --------------------------------------------------------------------------------------------------------------------------------------
+#alias 
+git congif --global alias.[name-alias] 'comandos sin git' 
+
+# al momento de usar alias de coloca git [alias] 
 
 
