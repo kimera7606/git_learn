@@ -81,6 +81,9 @@ git log (n) donde n sera el numero de confirmaciones
 -----------------------------------------------------------------------------------------------------------------------------
 #deshacer cosas:
 git commit -amend -m #pega la preparacion actual con el commit pasado incluso puedes dejar directo el cambio del commit anterior es decir el msj
-
+--------------------------------------------------------------------------------------------------------------------------------------------------
+#deshacer cambios preparados
+git reset head <file>
+--------------------------------------------------------------------------------------------------------------------------------------
 
 
