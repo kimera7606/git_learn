@@ -1,0 +1,7 @@
+#crear rama
+git branch <name branch>
+
+#cambiar de rama
+
+git checkout <rama>
+
