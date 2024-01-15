@@ -5,3 +5,5 @@ git branch <name branch>
 
 git checkout <rama>
 
+#para volver a la rama principal debemos hacer un checkout a main 
+
