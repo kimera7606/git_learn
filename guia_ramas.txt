@@ -9,3 +9,8 @@ git checkout <rama>
 
 si seguimos escirbiendo en la branch se podran visualizar mejor con un arbol o con gitk
 con 3 creo que deberiamos estar listo para un merge
+este es el ultimo cambio para realizar el merge la union de rama con master usando
+
+git merge 
+
+este git merge se debe hacer desde el checkout del main 
