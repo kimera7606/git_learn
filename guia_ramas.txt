@@ -8,3 +8,4 @@ git checkout <rama>
 #para volver a la rama principal debemos hacer un checkout a main 
 
 si seguimos escirbiendo en la branch se podran visualizar mejor con un arbol o con gitk
+con 3 creo que deberiamos estar listo para un merge
