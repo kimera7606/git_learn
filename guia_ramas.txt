@@ -14,3 +14,4 @@ este es el ultimo cambio para realizar el merge la union de rama con master usan
 git merge 
 
 este git merge se debe hacer desde el checkout del main 
+
